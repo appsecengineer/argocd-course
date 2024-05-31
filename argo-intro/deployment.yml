@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: we-care
+spec:
+  selector:
+    matchLabels:
+      app: we-care
+  replicas: 1
+  minReadySeconds: 15
+  template:
+    metadata:
+      labels:
+        app: we-care
+    spec:
+      containers:
+      - image: we45/wecare
+        imagePullPolicy: IfNotPresent
+        name: we-care
+        ports:
+        - containerPort: 80
+
