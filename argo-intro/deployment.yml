@@ -14,7 +14,7 @@ spec:
         app: we-care
     spec:
       containers:
-      - image: we45/wecare:v1
+      - image: we45/wecare
         imagePullPolicy: IfNotPresent
         name: we-care
         ports:
