@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: we-care
-  replicas: 2
+  replicas: 1
   minReadySeconds: 15
   template:
     metadata:
